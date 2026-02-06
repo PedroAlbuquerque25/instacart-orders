@@ -11,6 +11,14 @@ O projeto faz parte do currículo de Data Science da **Tripleten**.
 
 ---
 
+## 📊 Origem dos Dados
+Os dados utilizados neste projeto foram lançados originalmente pela **Instacart** em 2017 para uma competição no **Kaggle**. 
+* **Contexto:** O conjunto de dados real reflete o comportamento de pedidos de supermercado online.
+* **Modificações:** Para este projeto educacional da **Tripleten**, os dados foram tratados para incluir valores ausentes e duplicatas, visando exercitar técnicas de limpeza e processamento.
+* **Fonte Original:** [Instacart Market Basket Analysis on Kaggle](https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2)
+
+---
+
 ## 📂 Estrutura do Repositório
 ```text
 ├── datasets/             # Pasta com ficheiros CSV (apenas cabeçalhos)
