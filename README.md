@@ -1,106 +1,111 @@
-# 🛒 Instacart Orders Analysis (Tripleten)
+# 🛒 Instacart Orders Analysis (TripleTen)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
-## 📝 Descrição
-Este projeto realiza uma **Análise Exploratória de Dados (AED)** detalhada nos registros de pedidos da plataforma Instacart. O foco principal foi limpar uma base de dados propositalmente modificada com valores ausentes e duplicatas, para então extrair insights sobre o comportamento de consumo dos usuários.
+## 📝 Description
+This project performs a detailed **Exploratory Data Analysis (EDA)** on order records from the Instacart platform. The main objective was to clean a dataset intentionally modified with missing values and duplicates, and then extract insights about user purchasing behavior.
 
-O projeto faz parte do currículo de Data Science da **Tripleten**.
-
----
-
-## 📊 Origem dos Dados
-Os dados utilizados neste projeto foram lançados originalmente pela **Instacart** em 2017 para uma competição no **Kaggle**. 
-* **Contexto:** O conjunto de dados real reflete o comportamento de pedidos de supermercado online.
-* **Modificações:** Para este projeto educacional da **Tripleten**, os dados foram tratados para incluir valores ausentes e duplicatas, visando exercitar técnicas de limpeza e processamento.
-* **Fonte Original:** [Instacart Market Basket Analysis on Kaggle](https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2)
+This project is part of the **TripleTen Data Science curriculum**.
 
 ---
 
-## 📂 Estrutura do Repositório
-```text
-├── datasets/             # Pasta com ficheiros CSV (apenas cabeçalhos)
-│   ├── aisles.csv
-│   ├── departments.csv
-│   ├── instacart_orders.csv
-│   ├── order_products.csv
-│   └── products.csv
-├── notebooks/            # Pasta com o desenvolvimento do projeto
-│   └── Instacart-orders.ipynb 
-├── .gitignore            # Ficheiros ignorados (dados pesados e sistema)
-├── requirements.txt      # Dependências para reprodução do ambiente
-└── README.md             # Documentação principal do projeto
+## 📊 Data Source
+The data used in this project was originally released by **Instacart** in 2017 for a **Kaggle** competition.  
+**Context:** The real-world dataset reflects online grocery ordering behavior.  
+**Modifications:** For this educational project at **TripleTen**, the data was altered to include missing values and duplicates, allowing the practice of data cleaning and preprocessing techniques.  
+**Original Source:** https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2
 
 ---
 
-## 🛠️ Etapas do Projeto
-1. **Pré-processamento de Dados**: 
-   - Identificação e tratamento de valores nulos.
-   - Remoção de dados duplicados.
-   - Conversão de tipos de dados para otimização de memória.
-2. **Análise Exploratória (EDA)**:
-   - Distribuição de pedidos por hora do dia e dia da semana.
-   - Análise de tempo de espera entre pedidos.
-   - Identificação dos produtos mais populares e departamentos mais visitados.
-3. **Conclusões**: Síntese dos padrões de compra identificados.
+## 📂 Repository Structure
+datasets/ — Folder containing CSV files (headers only)  
+aisles.csv  
+departments.csv  
+instacart_orders.csv  
+order_products.csv  
+products.csv  
+
+notebooks/ — Project development notebooks  
+Instacart-orders.ipynb  
+
+.gitignore — Ignored files (large data and system files)  
+requirements.txt — Environment dependencies  
+README.md — Main project documentation  
 
 ---
 
-## 🚀 Tecnologias e Bibliotecas
-- **Python 3.x**
-- **Pandas**: Manipulação e limpeza de tabelas.
-- **NumPy**: Operações matemáticas.
-- **Matplotlib & Seaborn**: Criação de gráficos e visualizações.
+## 🛠️ Project Steps
+1. **Data Preprocessing**  
+   Identification and treatment of missing values.  
+   Removal of duplicate records.  
+   Data type conversion for memory optimization.  
+
+2. **Exploratory Data Analysis (EDA)**  
+   Order distribution by hour of day and day of week.  
+   Analysis of time intervals between orders.  
+   Identification of the most popular products and departments.  
+
+3. **Conclusions**  
+   Summary of the main purchasing patterns identified.  
 
 ---
 
-## ⚙️ Como Executar
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/seu-usuario/instacart-orders.git](https://github.com/seu-usuario/instacart-orders.git)
-2. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Dados**: Os arquivos CSV na pasta `datasets/` contêm apenas os cabeçalhos. Você precisa adicionar os dados reais aos arquivos CSV conforme descrito no notebook. Os dados originais são modificados da base Instacart e podem ser obtidos separadamente.
-
-4. Abra o Jupyter Notebook:
-   ```bash
-   jupyter notebook Instacart-orders.ipynb
-   ```
-
-5. Execute as células sequencialmente para reproduzir a análise.
+## 🚀 Technologies and Libraries
+**Python 3.x**  
+**Pandas** — Data manipulation and cleaning  
+**NumPy** — Numerical operations  
+**Matplotlib & Seaborn** — Data visualization and plotting  
 
 ---
 
-## 📊 Dados
-O conjunto de dados inclui 5 tabelas CSV:
-- `instacart_orders.csv`: Informações sobre os pedidos.
-- `products.csv`: Detalhes dos produtos.
-- `order_products.csv`: Itens em cada pedido.
-- `aisles.csv`: Corredores dos produtos.
-- `departments.csv`: Departamentos dos produtos.
+## ⚙️ How to Run
+1. Clone the repository:  
+git clone https://github.com/seu-usuario/instacart-orders.git  
 
-**Nota**: Os arquivos criados contêm apenas os cabeçalhos das colunas. Insira os dados correspondentes para executar a análise.
+2. Install dependencies:  
+pip install -r requirements.txt  
+
+3. **Data**  
+The CSV files in the datasets folder contain **only column headers**.  
+You must add the actual data to the CSV files as described in the notebook.  
+The original data is based on the Instacart dataset and can be obtained separately.  
+
+4. Open the Jupyter Notebook:  
+jupyter notebook Instacart-orders.ipynb  
+
+5. Run the cells sequentially to reproduce the analysis.
 
 ---
 
-## 📈 Resultados Principais
-- Padrões de pedidos por hora e dia da semana.
-- Produtos mais populares.
-- Distribuição de itens por pedido.
-- Análise de comportamento de recompra.
+## 📊 Dataset
+The dataset consists of **5 CSV tables**:  
+instacart_orders.csv — Order-level information  
+products.csv — Product details  
+order_products.csv — Items included in each order  
+aisles.csv — Product aisles  
+departments.csv — Product departments  
+
+**Note:** The CSV files included in this repository contain only column headers. You must insert the corresponding data to execute the analysis.
 
 ---
 
-## 🤝 Contribuição
-Contribuições são bem-vindas! Abra uma issue ou pull request.
+## 📈 Key Results
+Order patterns by hour of day and day of week.  
+Most popular products.  
+Distribution of items per order.  
+Reorder behavior analysis.  
 
-## 📄 Licença
-Este projeto é para fins educacionais.
+---
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+---
+
+## 📄 License
+This project is intended for educational purposes only.
 
 ---
 
