@@ -12,16 +12,18 @@ O projeto faz parte do currículo de Data Science da **Tripleten**.
 ---
 
 ## 📂 Estrutura do Repositório
-* `Instacart-orders.ipynb`: Notebook com a análise completa.
-* `datasets/`: Pasta com os arquivos CSV dos dados:
-  - `instacart_orders.csv`
-  - `products.csv`
-  - `order_products.csv`
-  - `aisles.csv`
-  - `departments.csv`
-* `requirements.txt`: Lista de dependências para reprodução do ambiente.
-* `README.md`: Documentação do projeto.
-* `.gitignore`: Arquivo para ignorar arquivos temporários.
+```text
+├── datasets/             # Pasta com ficheiros CSV (apenas cabeçalhos)
+│   ├── aisles.csv
+│   ├── departments.csv
+│   ├── instacart_orders.csv
+│   ├── order_products.csv
+│   └── products.csv
+├── notebooks/            # Pasta com o desenvolvimento do projeto
+│   └── Instacart-orders.ipynb 
+├── .gitignore            # Ficheiros ignorados (dados pesados e sistema)
+├── requirements.txt      # Dependências para reprodução do ambiente
+└── README.md             # Documentação principal do projeto
 
 ---
 
