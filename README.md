@@ -62,7 +62,7 @@ README.md — Main project documentation
 
 ## ⚙️ How to Run
 1. Clone the repository:  
-git clone https://github.com/seu-usuario/instacart-orders.git  
+git clone https://github.com/PedroAlbuquerque25/instacart-orders.git  
 
 2. Install dependencies:  
 pip install -r requirements.txt  
